@@ -4,16 +4,22 @@ import { max } from "../src/intro";
 describe("max", () => {
   it("should return the first argument if it is greater", () => {
     //Arrange
-    const a = 2;
-    const b = 1;
+    // const a = 2;
+    // const b = 1;
 
     //AAA
-    const results = max(a, b);
+    // const results = max(a, b);
 
     //Assert
-    expect(results).toBe(2);
+    // expect(results).toBe(2);
 
     // using a single line
-    // expect(max(a, b)).toBe(2);
+    expect(max(2, 1)).toBe(2);
+  });
+  it("should return the second argument if it is greater", () => {
+    expect(max(1, 2)).toBe(2);
+  });
+  it("should return the second argument if it is equal", () => {
+    expect(max(1, 1)).toBe(1);
   });
 });
