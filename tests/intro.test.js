@@ -53,3 +53,17 @@ describe("calculateAverage", () => {
     expect(calculateAverage([1, 2, 3])).toBe(2);
   });
 });
+describe("factorial", () => {
+  it("should return undefined if given number is less than 0", () => {
+    expect(factorial(-1)).toBeUndefined();
+  });
+  it("should return 1 if given number is 0 or 1", () => {
+    expect(factorial(0)).toBe(1);
+  });
+  it("should return the factorial if given number is 2", () => {
+    expect(factorial(2)).toBe(2);
+  });
+  it("should return the factorial if given number is 3", () => {
+    expect(factorial(3)).toBe(6);
+  });
+});
